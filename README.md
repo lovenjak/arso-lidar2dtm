@@ -2,8 +2,8 @@
 Automatically download ARSO LIDAR (OTR) and generate DTM.
 
 ## Dependencies
-lasmerge.exe, lasinfo.exe, las2dem: [LASTools software suite](https://rapidlasso.com/lastools/)
-EzLAS.exe: [LAS Optimizer 1.2](https://www.arcgis.com/home/item.html?id=787794cdbd384261bc9bf99a860a374f), ESRI
+lasmerge.exe, lasinfo.exe, las2dem: [LASTools software suite](https://rapidlasso.com/lastools/) by rapidlasso GmbH
+EzLAS.exe: [LAS Optimizer 1.2](https://www.arcgis.com/home/item.html?id=787794cdbd384261bc9bf99a860a374f) by ESRI
 
 ## Instalation
 Clone repository and add dependecies.
