@@ -12,6 +12,6 @@ Clone repository and add dependecies.
 Launch `gui.py`.
 
 ## Notes
-Author of arso-lidar2dtm does not provide dependencies.
-Please note that LAStools is not "free" (see http://lastools.org/LICENSE.txt)
+Author of arso-lidar2dtm does not provide dependencies.   
+Please note that LAStools is not "free" (see http://lastools.org/LICENSE.txt)    
 Contact 'martin.isenburg@rapidlasso.com' to clarify licensing terms if needed.
