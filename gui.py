@@ -364,10 +364,9 @@ class Window:
 
         create_grid(_workspace, _output, _step, _start_index)
 
+
 def main():
     window = Window(800, 555)
-
-
 
 
 if __name__ == "__main__":

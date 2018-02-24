@@ -14,9 +14,9 @@ las2txt
 lasinfo
 
 TO-DO:
-Find whats wrong with current version
-Add step and output file entry
-Add console output
+Remove EzLAS dependency
+Refactor
+Try using PyQt for GUI
 """
 
 
