@@ -5,10 +5,10 @@ def main():
 
     # Using arso-lidar2dtm in Python
 
-    y = 567536
-    x = 142344
-    dx = 250
-    dy = 300
+    y = 438263
+    x = 110318
+    dx = 50000
+    dy = 50000
 
     x_min = x - dx
     x_max = x + dx
