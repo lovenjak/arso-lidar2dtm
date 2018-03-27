@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb086367-302f-4124-bf31-a067a7d65ad2" name="Default" comment="Started branch otr-downloader.">
-      <change beforePath="$PROJECT_DIR$/download.py" afterPath="$PROJECT_DIR$/download.py" />
-      <change beforePath="$PROJECT_DIR$/example.py" afterPath="$PROJECT_DIR$/example.py" />
-      <change beforePath="$PROJECT_DIR$/gui.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gui_utils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
-    </list>
+    <list default="true" id="cb086367-302f-4124-bf31-a067a7d65ad2" name="Default" comment="Started branch otr-downloader." />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
