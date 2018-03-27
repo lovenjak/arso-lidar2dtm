@@ -1,3 +1,4 @@
+import os
 from utils import *
 
 
@@ -33,11 +34,7 @@ class Boundaries:
         return names
 
 
-def get_data(workspace, boundaries, ks, extract_to_las=False):
-
-    sheet_names = boundaries.sheet_names
-    request_data = prepare_request_data(workspace, sheet_names, ks)
-
+def download_requests(workspace, request_data, extract_to_las=False):
     lidar_list_file = os.path.join(workspace.workspace_folder, 'lidar_list.txt')
 
     # If data does not exist already, download and (optionally) decompress it.

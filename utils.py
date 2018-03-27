@@ -31,7 +31,7 @@ def ks2fn_ks(ks):
         raise ValueError
 
 
-def prepare_request_data(workspace, sheet_names, ks):
+def request_sheet(workspace, sheet_names, ks):
     request_data = []
 
     for record in DBF(workspace.fishnet_path[ks]):
@@ -48,6 +48,19 @@ def prepare_request_data(workspace, sheet_names, ks):
         print("The following files do not even exist:")
         [print(" *" + name) for name in sheet_names]
         print("Get your facts straight.")
+
+    return request_data
+
+
+def request_everything(workspace, ks, extract_to_las=False):
+    request_data = []
+
+    for record in DBF(workspace.fishnet_path[ks]):
+        name = record['NAME']
+        block = record['BLOK']
+        filename = '{0}_{1}'.format(ks2fn_ks(ks), name)
+        url = 'http://gis.arso.gov.si/lidar/otr/{0}/{1}/{2}.zlas'.format(block, ks, filename)
+        request_data.append([filename, url])
 
     return request_data
 

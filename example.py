@@ -21,8 +21,11 @@ def main():
 
     ks = "D48GK"  # or "D96TM"
 
+    # Prepare requests.
+    my_request = request_everything(workspace, ks)
+
     # Download LIDAR data.
-    get_data(workspace, boundaries, ks)
+    download_requests(workspace, my_request)
 
 
 if __name__ == "__main__":
