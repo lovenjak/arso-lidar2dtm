@@ -52,7 +52,22 @@ def request_sheet(workspace, sheet_names, ks):
     return request_data
 
 
-def request_everything(workspace, ks, extract_to_las=False):
+def request_block(workspace, block_names, ks):
+    request_data = []
+
+    for record in DBF(workspace.fishnet_path[ks]):
+        block = record['BLOK']
+
+        if block in block_names:
+            name = record['NAME']
+            filename = '{0}_{1}'.format(ks2fn_ks(ks), name)
+            url = 'http://gis.arso.gov.si/lidar/otr/{0}/{1}/{2}.zlas'.format(block, ks, filename)
+            request_data.append([filename, url])
+
+    return request_data
+
+
+def request_everything(workspace, ks):
     request_data = []
 
     for record in DBF(workspace.fishnet_path[ks]):
@@ -63,5 +78,3 @@ def request_everything(workspace, ks, extract_to_las=False):
         request_data.append([filename, url])
 
     return request_data
-
-
