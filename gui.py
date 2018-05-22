@@ -359,8 +359,8 @@ class Window:
 
         _workspace = os.path.abspath(self.workspace.get())
         _output = self.output.get()
-        _step = tkstr2float(self.step.get())
-        _start_index = int(tkstr2float(self.start_index.get()))
+        _step = tkstr2float(self.step)
+        _start_index = int(tkstr2float(self.start_index))
 
         create_grid(_workspace, _output, _step, _start_index)
 

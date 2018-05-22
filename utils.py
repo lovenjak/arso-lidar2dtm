@@ -169,7 +169,7 @@ def get_data(workspace, dbf_file, ks, fn_ks, x_range, y_range, x_min, y_min, x_m
 
     # Get info on clip.
     print("Getting info on clip.")
-    info = subprocess.check_output('.\lasinfo.exe {4}/clip.las', stderr=subprocess.STDOUT,
+    info = subprocess.check_output('.\lasinfo.exe {}/clip.las'.format(workspace), stderr=subprocess.STDOUT,
                                    shell=True, universal_newlines=True)
     info = info.splitlines()
     n_points = int((" ".join(info[15].split())).split()[4])
@@ -185,7 +185,7 @@ def create_grid(workspace, output, step, start_index):
 
     # Create grid file.
     print("Creating grid file in XYZ format.")
-    subprocess.call('.\las2dem.exe -i clip.las -o {2}\{0}.xyz -step {1}'
+    subprocess.call('.\las2dem.exe -i {2}\clip.las -o {2}\{0}.xyz -step {1}'
                     .format(output, step, workspace))
 
     # Rename extension to *.txt and add point indices (GEOS compatibility)
